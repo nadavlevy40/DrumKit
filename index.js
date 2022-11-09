@@ -1,3 +1,6 @@
+//Using html DOM to select all "drum" classes from html file
+//Add for all of them a new method whenever user makes mouse click it will start the functions below
+
 document.querySelectorAll(".drum").forEach(function(drum){
     drum.addEventListener("click",function(){
         const buttomInnerHTML=this.innerHTML;
@@ -5,19 +8,6 @@ document.querySelectorAll(".drum").forEach(function(drum){
         buttomAnimation(buttomInnerHTML);
     });
 }); 
-
-// for(var i=0 ; i<document.querySelectorAll(".drum").length;i++)
-// {
-//     document.querySelectorAll(".drum")[i].addEventListener("click" ,function(){
-    
-//         var buttomInnerHTML=this.innerHTML;
-
-//         makeSound(buttomInnerHTML);
-
-//         buttomAnimation(buttomInnerHTML);
-        
-//     });
-// }
 
 
 document.addEventListener("keypress",function(event){
